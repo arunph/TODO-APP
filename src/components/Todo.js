@@ -39,8 +39,12 @@ export class Todo extends Component {
         )
     }
 
-    addStrike=(index)=>{
-    this.setState.task.map((index)=>this.state.task(index).strike)
+   addStrike=(index)=>{
+    const _strike=!this.state.strike
+    this.setState({
+        task:this.state.task,
+        strike:_strike
+    })
     }
 
     deleteTask=(index)=>{
